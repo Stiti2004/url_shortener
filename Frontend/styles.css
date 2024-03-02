@@ -1,0 +1,21 @@
+*
+{
+    background-color: rgb(223, 233, 89);
+    /* border: 5px solid black; */
+}
+
+.head
+{
+    color: rgb(237, 180, 9);
+    text-decoration: solid;
+    text-shadow: 2cap;
+    text-decoration-thickness: 2px;
+    padding: 60px 60px;
+}
+
+.short
+{
+    color:rgb(23, 145, 232);
+    text-decoration: solid ;
+    padding: 60px 60px;
+}

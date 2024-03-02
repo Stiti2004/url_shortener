@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>url shortener</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <h2 class="head">URL SHORTENER</h2>
+    <form class="short" action="/shorten" method="post">
+        <!-- <form> -->
+        <label id="2">
+            Enter the long URL
+            <input type="url" style="border: 3px solid black; border-radius: 5px;" name="long_url"  required/>
+        </label>
+        <label id="3">
+            Custom string
+            <input style="border: 3px solid black; border-radius: 5px;" type="text" name="c_string"  />
+        </label>
+        <button id="4" type="submit">Submit</button>
+    </form>
+</body>
+</html>
