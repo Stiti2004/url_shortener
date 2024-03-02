@@ -26,23 +26,24 @@ router.post('/shorten', async (req, res) => {
 
     try {
         let url;
-        
+        let urlCode;
         if (custom) {
             // Check for presence of custom strings in database
-            const existingUrl = await Url.findOne({ custom });
+            urlCode = custom;
+            const existingUrl = await Url.findOne({ urlCode });
             if (existingUrl) {
                 return res.send('Unavailable!');
             }
 
-            const shortUrl = baseUrl + '/' + custom;
+            const shortUrl = baseUrl + '/' + urlCode;
             url = new Url({
-                custom,
+                urlCode,
                 longUrl,
                 shortUrl
             });
         } else {
             // Generate a unique urlCode
-            let urlCode;
+            //let urlCode;
             do {
                 urlCode = shortid.generate();
             } while (await Url.findOne({ urlCode }));
