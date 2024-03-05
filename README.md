@@ -12,7 +12,7 @@ To use this url shortener in your local environment, follow the below steps :
 
 4. This shortener uses MongoDB for database, thus it's necessary to have a MongoDB account.
 
-5. Install the MongoDB driver using ```npm install mongodb``` and replace the "mongoURI" value; present under default.json, which is further present under the config folder; with your connection string. **Remember to replace ```<password>``` with your MongoDB password**
+5. Install the MongoDB driver using ```npm install mongodb``` and replace the "mongoURI" value; present under default.json, which is further present under the config folder; with your connection string. **Remember to replace ```<password>``` with your MongoDB password, in the connection string and also click on the "add current IP address" option so that the values are stored accordingly.**
 
 6. Finally, run the application using ```node index.js``` command.
 
