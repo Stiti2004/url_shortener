@@ -1,4 +1,7 @@
 # URL SHORTENER
+This application is a url shortener which helps in shortening the user-given long url.
+The frontend of the application is developed using HTML, CSS and Javascript, whereas for backend, React.js is used.
+MongoDB is used for datbase.
 To use this url shortener in your local environment, follow the below steps :
 
 1. Clone the repository to your local environment by using the command ```git clone <repo url>``` .
