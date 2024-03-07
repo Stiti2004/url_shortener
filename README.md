@@ -14,7 +14,7 @@ To use this url shortener in your local environment, follow the below steps :
 
 5. Install the MongoDB driver using ```npm install mongodb``` .R
 
-6. Replace the "mongoURI" value with your MongoDB connection string( which correctly includes your username and password) and the "baseUrl" value with the baseurl you prefer( for example: "http://localhost:5000"), in the default.json.sample file and       save it as default.json . 
+6. Replace the "mongoURI" value with your MongoDB connection string( which correctly includes your username and password), then the "baseUrl" value with the baseurl you prefer( for example: "http://localhost:5000") and the "port" value with the port number, in the default.json.sample file and save it as ```default.json``` . 
 
 8. Finally, run the application using ```node index.js``` command.
 
