@@ -3,6 +3,7 @@ const bodyParser = require('body-parser'); // Import body-parser
 const connectDB = require('./config/db');
 const path = require('path');
 const app = express();
+const config = require('config');
 
 app.set('view engine', 'ejs');
 
@@ -26,6 +27,6 @@ app.use((err, req, res, next) => {
   res.status(500).send('Something went wrong!');
 });
 
-const PORT = 5000;
+const PORT = config.get('port');
 
 app.listen(PORT, () => console.log(`Server running on port ${PORT}.`));
