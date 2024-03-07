@@ -1,0 +1,5 @@
+{
+  "mongoURI": "YOUR_MONGODB_URI",
+  "baseUrl": "YOUR_BASE_URL"
+}
+
