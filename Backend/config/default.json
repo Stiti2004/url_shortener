@@ -1,4 +1,0 @@
-{
-    "mongoURI" : "mongodb+srv://Stitipragya:Stiti_Mongo18@cluster0.w8xybro.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0",
-    "baseUrl" : "http://localhost:5000"
-}
