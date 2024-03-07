@@ -12,10 +12,12 @@ To use this url shortener in your local environment, follow the below steps :
 
 4. This shortener uses MongoDB for database, thus it's necessary to have a MongoDB account.
 
-5. Install the MongoDB driver using ```npm install mongodb``` and replace the "mongoURI" value; present under default.json, which is further present under the config folder; with your connection string. **Remember to replace ```<password>``` with your MongoDB password, in the connection string and also click on the "add current IP address" option so that the values are stored accordingly.**
+5. Install the MongoDB driver using ```npm install mongodb``` .R
 
-6. Finally, run the application using ```node index.js``` command.
+6. Replace the "mongoURI" value with your MongoDB connection string( which correctly includes your username and password) and the "baseUrl" value with the baseurl you prefer( for example: "http://localhost:5000"), in the default.json.sample file and       save it as default.json . 
 
-7. Open a new tab in a web browser and navigate to ```http://localhost:5000/api/url```.
+8. Finally, run the application using ```node index.js``` command.
+
+9. Open a new tab in a web browser and navigate to ```<baseUrl>/api/url```.
 
  
