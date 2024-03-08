@@ -18,7 +18,7 @@ router.post('/shorten', async (req, res) => {
     const longUrl = req.body.long_url;
     const custom = req.body.c_string;
     //const baseUrl = config.get('baseUrl');
-    const baseUrl = process.env.BASE_URL || config.get('baseUrl') || 'http://localhost:5000';
+    const baseUrl = process.env.baseUrl || config.get('baseUrl') || 'http://localhost:5000';
 
     // Check base url
     if (!validUrl.isUri(baseUrl)) {
